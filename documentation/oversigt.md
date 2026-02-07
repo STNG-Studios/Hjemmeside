@@ -16,3 +16,39 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Oprettet README.md til censor med vejledning
 
 **AI's rolle:** Claude Code opsatte hele dokumentationssystemet efter instruktion fra Simon.
+
+---
+
+## Session 002 — 2026-02-07
+
+**Formål:** Tilpasning af dokumentationssystem til ZIP-aflevering + automatisering
+
+**Hvad blev lavet:**
+- Tilføjet regler for inline-kommentarer i `.claude/CLAUDE.md` så al AI-kode markeres med kommentarer der peger på samtalefiler
+- Tilføjet regel om at Simon skal oplyse session-nummer ved start af hver session
+- Tilføjet auto-dokumentationsregler i `.claude/CLAUDE.md` så Claude automatisk skriver ændringsfiler og opdaterer README/oversigt
+- Omskrevet `documentation/README.md` så den guider censor uden at antage git-adgang
+- Omdøbt "Diff"-kolonne til "Ændringer" i sessionstabellen
+- Slettet `documentation/eksporter-diff.sh` (erstattet af Claudes auto-dokumentation)
+- Slettet tom `session-001_2026-02-07.diff`-fil
+- Erstattet tom session-001 ændringsfil med reel beskrivelse i nyt format
+- Forenklet workflow i MEMORY.md fra 5 til 2 manuelle trin
+- Oprettet ændringsfil for session 002
+
+**AI's rolle:** Claude Code tilpassede hele dokumentationssystemet efter instruktion fra Simon. Systemet blev ændret fra git-baseret (kræver `git log`/`git diff`) til et selvstændigt system hvor Claude selv skriver ændringsfiler under sessionen. Det eneste manuelle trin der er tilbage er samtale-eksport (nu forenklet med `/eksporter`-kommandoen).
+
+---
+
+## Session 003 — 2026-02-07
+
+**Formål:** Oprettelse af `/eksporter`-slash-command og opdatering af tilhørende dokumentation
+
+**Hvad blev lavet:**
+- Oprettet `.claude/commands/eksporter.md` — slash command der automatisk finder session-UUID og eksporterer samtalen
+- Opdateret `.claude/CLAUDE.md` med reference til `/eksporter`-kommandoen
+- Omskrevet `documentation/VEJLEDNING.md` med nye eksport-trin, eksempel og tjekliste
+- Opdateret `documentation/README.md` værktøjsbeskrivelse
+- Opdateret `documentation/oversigt.md` session 002-tekst
+- Opdateret `MEMORY.md` workflow-trin
+
+**AI's rolle:** Claude Code designede og implementerede `/eksporter`-kommandoen efter instruktion fra Simon, samt opdaterede al dokumentation der refererede til det gamle manuelle eksport-workflow.
