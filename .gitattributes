@@ -1,0 +1,21 @@
+# Bedre diffs for web-filer
+*.html diff=html
+*.css diff=css
+*.js diff=javascript
+
+# Billeder som binære filer
+*.webp binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+
+# Normaliser linjeskift
+* text=auto
+*.html text
+*.css text
+*.js text
+*.md text
+*.py text
+*.sh text eol=lf
