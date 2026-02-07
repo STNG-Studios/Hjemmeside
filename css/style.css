@@ -1,0 +1,620 @@
+/* CSS Custom Properties (farvevariabler). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+:root {
+  --bg-primary: #0a0a12;
+  --bg-secondary: #111128;
+  --bg-tertiary: #1a1a2e;
+  --accent: #2a2a5e;
+  --accent-light: #4a4a8a;
+  --accent-glow: rgba(74, 74, 138, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6a6a80;
+  --gradient: linear-gradient(135deg, #1a1a3e, #2a1a4e);
+  --font-family: 'Inter', sans-serif;
+  --nav-height: 70px;
+  --transition-speed: 0.3s;
+}
+
+/* Global reset og base-styling. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--accent-light);
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================
+   HEADER / NAVBAR
+   ============================================ */
+
+/* Sticky navigation med transparent-til-solid overgang. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+}
+
+.site-header.scrolled {
+  background-color: rgba(10, 10, 18, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: var(--nav-height);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 36px;
+  width: auto;
+}
+
+/* Hamburger-menu knap til mobil. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: transform var(--transition-speed) ease,
+              opacity var(--transition-speed) ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobilmenu (overlay). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transition: right var(--transition-speed) ease;
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  right: 0;
+}
+
+.nav-menu li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1rem;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+/* ============================================
+   HERO-SEKTION
+   ============================================ */
+
+/* Full-width hero med baggrundsbillede og centreret tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../img/STNG-Studios-Hero-Banner-20.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: var(--nav-height) 1.5rem 2rem;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 18, 0.3) 0%,
+    rgba(10, 10, 18, 0.1) 50%,
+    rgba(10, 10, 18, 0.8) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   APP-SEKTION
+   ============================================ */
+
+/* App-showcase sektion med karrusel og tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.app-section {
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app-section-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.app-section-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Billedkarrusel til app-screenshots. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.carousel-container {
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  overflow: hidden;
+  border-radius: 40px;
+  corner-shape: squircle;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 40px;
+  corner-shape: squircle;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--text-muted);
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease,
+              transform var(--transition-speed) ease;
+  padding: 0;
+}
+
+.carousel-dot.active {
+  background-color: var(--accent-light);
+  transform: scale(1.3);
+}
+
+.app-text {
+  text-align: center;
+}
+
+.app-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.app-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Scroll-animation klasser (bruges af JS). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.slide-in-left,
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   FOUNDER'S NOTE
+   ============================================ */
+
+/* Bølge-divider mellem app-showcase og founder's note. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.wave-divider {
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -80px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+/* Founder's note sektion med billede og tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.founder-section {
+  padding: 5rem 1.5rem;
+  background: var(--gradient);
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.founder-image {
+  width: 100%;
+  max-width: 350px;
+}
+
+.founder-image-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: var(--bg-tertiary);
+  border-radius: 40px;
+  corner-shape: squircle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-image-placeholder svg {
+  width: 64px;
+  height: 64px;
+  opacity: 0.3;
+}
+
+.founder-text {
+  text-align: center;
+}
+
+.founder-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.founder-text blockquote {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-style: italic;
+  border-left: 3px solid var(--accent-light);
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.founder-text .founder-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-style: normal;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+/* Footer med tre kolonner: links, selskabsinfo og social media. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--bg-secondary);
+  padding: 3rem 1.5rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.footer-company {
+  text-align: center;
+}
+
+.footer-company p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.footer-company strong {
+  color: var(--text-primary);
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  transition: background-color var(--transition-speed) ease,
+              color var(--transition-speed) ease;
+}
+
+.footer-social a:hover {
+  background-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   DESKTOP LAYOUT (min-width: 768px)
+   ============================================ */
+
+/* Responsive breakpoint for tablet og op. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    background-color: transparent;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .nav-menu li a {
+    font-size: 0.95rem;
+  }
+
+  .nav-overlay {
+    display: none !important;
+  }
+
+  .app-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .carousel-container {
+    flex-shrink: 0;
+    max-width: 280px;
+  }
+
+  .app-text {
+    text-align: left;
+  }
+
+  .app-text p {
+    margin: 0;
+  }
+
+  .founder-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .founder-image {
+    flex-shrink: 0;
+    max-width: 300px;
+  }
+
+  .founder-text {
+    text-align: left;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-links ul {
+    align-items: flex-start;
+  }
+
+  .footer-social {
+    justify-content: flex-end;
+  }
+}
+
+/* ============================================
+   DESKTOP LAYOUT (min-width: 1024px)
+   ============================================ */
+
+/* Responsive breakpoint for desktop med scroll-animationer. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+@media (min-width: 1024px) {
+  .carousel-container {
+    max-width: 320px;
+  }
+
+  .founder-image {
+    max-width: 350px;
+  }
+
+  /* Scroll-animation starttilstand (kun desktop). Easing ændret til ease-in-out. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
+  .slide-in-left {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+  .slide-in-left.visible,
+  .slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

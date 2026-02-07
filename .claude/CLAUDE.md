@@ -18,6 +18,15 @@ Eksempler:
 - `[AI] Implementer responsiv navigation`
 - `[AI] Fix styling-fejl i kontaktformular`
 
+## Clarifying Questions (OBLIGATORISK)
+
+Det er obligatorisk at stille afklarende spørgsmål ("clarifying questions") før implementering af nye features eller større ændringer. Dette sikrer:
+- Ingen misforståelser mellem Simon og Claude
+- At implementeringen følger best practice
+- At det præcis er det ønskede resultat der leveres
+
+Claude **skal** altid stille relevante spørgsmål om uklare krav, designvalg og tekniske detaljer **før** kodning begynder.
+
 ## Kontekst
 
 Dette er et skoleprojekt for STNG Studios ApS. Al brug af AI skal dokumenteres, da censor skal kunne se præcis hvad AI har lavet og ændret.

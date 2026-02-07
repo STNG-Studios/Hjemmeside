@@ -52,3 +52,18 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Opdateret `MEMORY.md` workflow-trin
 
 **AI's rolle:** Claude Code designede og implementerede `/eksporter`-kommandoen efter instruktion fra Simon, samt opdaterede al dokumentation der refererede til det gamle manuelle eksport-workflow.
+
+---
+
+## Session 004 — 2026-02-07
+
+**Formål:** Oprettelse af komplet startside (index.html) for STNG Studios
+
+**Hvad blev lavet:**
+- Oprettet `index.html` med semantisk HTML5 (header, hero, app-sektion, founder's note, footer)
+- Oprettet `css/style.css` med mobile-first dark theme baseret på brand-farver
+- Oprettet `js/main.js` med jQuery-baseret interaktivitet (sticky navbar, hamburger-menu, auto-karrusel, scroll-animationer)
+- Implementeret Open Graph meta tags og Schema markup (JSON-LD Organization)
+- Tilføjet obligatorisk regel om clarifying questions i `.claude/CLAUDE.md`
+
+**AI's rolle:** Claude Code stillede afklarende spørgsmål om design, karrusel-opførsel, navbar-stil og kontaktinfo. Derefter implementerede Claude hele startsiden inkl. responsive layout, billedkarrusel med auto-rotation, scroll-animationer (kun desktop) og SEO-optimering.

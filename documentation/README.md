@@ -51,6 +51,7 @@ session-002.md -->           Claude svarede             der blev ændret
 | 001 | 2026-02-07 | Opsætning af dokumentationssystem | [samtale](samtaler/session-001_2026-02-07.md) | [ændringer](ai-aendringer/session-001_2026-02-07.md) |
 | 002 | 2026-02-07 | Tilpasning af dokumentation til ZIP-aflevering + automatisering | [samtale](samtaler/session-002_2026-02-07.md) | [ændringer](ai-aendringer/session-002_2026-02-07.md) |
 | 003 | 2026-02-07 | Oprettelse af `/eksporter`-slash-command + dokumentationsopdatering | [samtale](samtaler/session-003_2026-02-07.md) | [ændringer](ai-aendringer/session-003_2026-02-07.md) |
+| 004 | 2026-02-07 | Oprettelse af komplet startside (index.html) med CSS, JS, OG tags, Schema markup | [samtale](samtaler/session-004_2026-02-07.md) | [ændringer](ai-aendringer/session-004_2026-02-07.md) |
 
 ## Værktøjer brugt
 
