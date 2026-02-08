@@ -140,6 +140,40 @@ $(document).ready(function () {
   startAutoPlay();
 
   // ============================================
+  // FAQ ACCORDION — klik for at vise/skjule svar med scrollHeight-baseret animation
+  // Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md
+  // ============================================
+  $('.faq-question').on('click', function () {
+    var $item = $(this).closest('.faq-item');
+    var $answer = $item.find('.faq-answer');
+    var isActive = $item.hasClass('active');
+
+    if (isActive) {
+      // LUKKER: sæt height til nuværende scrollHeight, så browser kan animere fra det
+      $answer.css('height', $answer[0].scrollHeight + 'px');
+      $answer[0].offsetHeight; // Force reflow
+      $answer.css('height', '0');
+      $item.removeClass('active');
+    } else {
+      // ÅBNER: tilføj active, mål scrollHeight, sæt som height
+      $item.addClass('active');
+      var fullHeight = $answer[0].scrollHeight;
+      $answer.css('height', fullHeight + 'px');
+
+      // Når animationen er færdig, sæt height til auto (tilpasning ved resize)
+      $answer.one('transitionend', function () {
+        if ($item.hasClass('active')) {
+          $answer.css('height', 'auto');
+        }
+      });
+    }
+
+    // Opdatér aria-attributter for tilgængelighed
+    $(this).attr('aria-expanded', !isActive);
+    $answer.attr('aria-hidden', isActive);
+  });
+
+  // ============================================
   // SCROLL-ANIMATIONER — elementer glider ind fra siderne (kun desktop)
   // Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
   // ============================================

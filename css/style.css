@@ -511,6 +511,107 @@ ul {
 }
 
 /* ============================================
+   FAQ-SEKTION
+   ============================================ */
+
+/* FAQ-header med centreret overskrift og undertekst. Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md */
+.faq-header {
+  padding: calc(var(--nav-height) + 3rem) 1.5rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-header h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.faq-header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* FAQ accordion-kort med expand/collapse animation. Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background-color: var(--bg-secondary);
+  border-radius: 40px;
+  corner-shape: squircle;
+  overflow: hidden;
+  margin: 0.4rem;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--transition-speed) ease;
+}
+
+.faq-question:hover {
+  color: var(--accent-light);
+}
+
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0), color var(--transition-speed) ease;
+}
+
+.faq-question:hover .faq-chevron {
+  color: var(--accent-light);
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  padding: 0 2rem;
+}
+
+.faq-answer p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+  padding-bottom: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.faq-item.active .faq-answer p {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.1s;
+}
+
+/* ============================================
    DESKTOP LAYOUT (min-width: 768px)
    ============================================ */
 
@@ -582,6 +683,29 @@ ul {
 
   .footer-social {
     justify-content: flex-end;
+  }
+
+  .faq-header {
+    padding-top: calc(var(--nav-height) + 4rem);
+    padding-bottom: 3rem;
+  }
+
+  .faq-list {
+    max-width: 800px;
+  }
+
+  .faq-question {
+    padding: 1.75rem 2.5rem;
+    font-size: 1.05rem;
+  }
+
+  .faq-answer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .faq-answer p {
+    padding-bottom: 1.75rem;
   }
 }
 
