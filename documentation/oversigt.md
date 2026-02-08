@@ -81,3 +81,17 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Punkt 5 (Databeskyttelse og Cookies) har underpunkter med bullet-liste
 
 **AI's rolle:** Claude Code planlagde implementeringen og oprettede nye CSS-klasser for at undgå kobling til FAQ-klasserne. Alt indhold blev leveret af Simon og placeret i semantisk HTML5-struktur med korrekte ARIA-labels.
+
+---
+
+## Session 008 — 2026-02-08
+
+**Formål:** Oprettelse af produkter-side (produkter.html) med app deep-dive showcase
+
+**Hvad blev lavet:**
+- Oprettet `produkter.html` med hero-sektion (placeholder til custom "exploding phone"-billede), tre feature-sektioner med eksisterende app-screenshots i alternerende layout, CTA-sektion og footer
+- Tilføjet nye `.product-hero`, `.feature-row`, `.product-cta`, `.cta-button` CSS-klasser i `css/style.css` med responsive breakpoints
+- Genbrugt designmønstre fra om-os (alternerende layout, wave-divider, scroll-animationer)
+- Ingen ændringer nødvendige i JavaScript — eksisterende kode virker automatisk
+
+**AI's rolle:** Claude Code brainstormede tre layout-tilgange med Simon og stillede afklarende spørgsmål om hero-design, billeder og CTA. Simon valgte "Apple Product Page"-stilen. Claude implementerede hele siden.

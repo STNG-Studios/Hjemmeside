@@ -897,6 +897,203 @@ ul {
 }
 
 /* ============================================
+   PRODUKTER — HERO-SEKTION
+   ============================================ */
+
+/* Product hero med app-showcase billede og introduktionstekst. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+.product-hero {
+  padding: calc(var(--nav-height) + 3rem) 1.5rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.product-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Svæve-animation til hero-billede (subtil op/ned bevægelse). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+@keyframes product-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.product-hero-image {
+  width: 100%;
+  max-width: 400px;
+  animation: product-float 3s ease-in-out infinite;
+  position: relative;
+}
+
+/* Diffus hvid cirkel bag hero-billedet som backlight-effekt. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+.product-hero-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.173) 0%, rgba(255, 255, 255, 0.095) 40%, transparent 70%);
+  filter: blur(50px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.product-hero-image img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.product-hero-text {
+  text-align: center;
+}
+
+.product-hero-text h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.product-hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.product-hero-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   PRODUKTER — FEATURE-SEKTIONER
+   ============================================ */
+
+/* Feature-sektioner med individuelle lilla baggrunde og bølge-grænser. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+.product-feature {
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-feature--1 {
+  background-color: #1a1a3e;
+  padding-top: 7rem;
+}
+
+.product-feature--2 {
+  background-color: #212150;
+  padding-top: 7rem;
+}
+
+.product-feature--3 {
+  background-color: #2a2a62;
+  padding-top: 7rem;
+}
+
+.feature-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 280px;
+  flex-shrink: 0;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 40px;
+  corner-shape: squircle;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+}
+
+.feature-text {
+  text-align: center;
+}
+
+.feature-text h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feature-text p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   PRODUKTER — CTA-SEKTION
+   ============================================ */
+
+/* Call-to-action sektion med "Kommer snart" og kontakt-knap. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+.product-cta {
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.product-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-cta-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.product-cta-content p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  border: 1px solid var(--accent-light);
+  transition: background-color var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-light);
+  color: var(--text-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+/* ============================================
    DESKTOP LAYOUT (min-width: 768px)
    ============================================ */
 
@@ -1020,6 +1217,46 @@ ul {
   .founder-bio {
     text-align: left;
   }
+
+  /* Responsive produkter-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+  .product-hero {
+    padding-top: calc(var(--nav-height) + 4rem);
+  }
+
+  .product-hero-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .product-hero-image {
+    flex-shrink: 0;
+    max-width: 350px;
+  }
+
+  .product-hero-text {
+    text-align: left;
+  }
+
+  .product-hero-description {
+    margin: 0;
+  }
+
+  .feature-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .feature-row--reversed {
+    flex-direction: row-reverse;
+  }
+
+  .feature-text {
+    text-align: left;
+  }
+
+  .feature-text p {
+    margin: 0;
+  }
 }
 
 /* ============================================
@@ -1053,5 +1290,16 @@ ul {
   .slide-in-right.visible {
     opacity: 1;
     transform: translateX(0);
+  }
+
+  /* Responsive produkter-styling (desktop). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+  .product-hero-image {
+    max-width: 700px;
+    animation: none;
+  }
+
+  /* Svæve-animation starter efter slide-in (0.8s delay). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+  .product-hero-image.visible {
+    animation: product-float 4s ease-in-out 0.8s infinite;
   }
 }
