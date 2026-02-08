@@ -184,13 +184,18 @@ $(document).ready(function () {
       threshold: 0.2
     };
 
-    // Genafspilelig scroll-animation: .visible tilføjes/fjernes ved scroll. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
+    // Scroll-animation: .visible tilføjes ved scroll. Elementer med data-animate-once animeres kun én gang. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           $(entry.target).addClass('visible');
+          if (entry.target.hasAttribute('data-animate-once')) {
+            observer.unobserve(entry.target);
+          }
         } else {
-          $(entry.target).removeClass('visible');
+          if (!entry.target.hasAttribute('data-animate-once')) {
+            $(entry.target).removeClass('visible');
+          }
         }
       });
     }, observerOptions);

@@ -710,6 +710,193 @@ ul {
 }
 
 /* ============================================
+   OM OS — HERO-SEKTION
+   ============================================ */
+
+/* Hero-sektion med team-billede i afrundet boks og overlay tekst. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+.about-hero {
+  padding: calc(var(--nav-height) + 1rem) 5% 3rem;
+}
+
+.about-hero-box {
+  position: relative;
+  border-radius: 40px;
+  corner-shape: squircle;
+  overflow: hidden;
+}
+
+.about-hero-placeholder {
+  width: 100%;
+  min-height: 620px;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-placeholder svg {
+  width: 80px;
+  height: 80px;
+  opacity: 0.2;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 18, 0.2) 0%,
+    rgba(10, 10, 18, 0.5) 100%
+  );
+}
+
+.about-hero-overlay h1 {
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0.5rem;
+}
+
+.about-hero-overlay p {
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  color: var(--text-secondary);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   OM OS — FOUNDER-SEKTIONER
+   ============================================ */
+
+/* Founder-sektioner med alternerende layout. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+/* Gradient-baggrund for founders-sektionen. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+.about-founders {
+  background: var(--gradient);
+  padding: 8rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.founder-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Polaroid-kort styling med ekstra bund-padding. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+.polaroid-card {
+  background-color: var(--bg-secondary);
+  border-radius: 24px;
+  corner-shape: squircle;
+  padding: 0.75rem 0.75rem 1.5rem;
+  width: 100%;
+  max-width: 280px;
+  flex-shrink: 0;
+}
+
+.polaroid-image {
+  border-radius: 18px;
+  corner-shape: squircle;
+  overflow: hidden;
+}
+
+.polaroid-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  corner-shape: squircle;
+}
+
+.polaroid-placeholder svg {
+  width: 56px;
+  height: 56px;
+  opacity: 0.25;
+}
+
+.polaroid-info {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.polaroid-info h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.polaroid-role {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.polaroid-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.polaroid-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  transition: background-color var(--transition-speed) ease,
+              color var(--transition-speed) ease;
+}
+
+.polaroid-links a:hover {
+  background-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.polaroid-links svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Founder bio-tekst. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+.founder-bio {
+  text-align: center;
+}
+
+.founder-bio h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.founder-bio p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.founder-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
    DESKTOP LAYOUT (min-width: 768px)
    ============================================ */
 
@@ -814,6 +1001,24 @@ ul {
 
   .terms-item {
     padding: 2rem 2.5rem;
+  }
+
+  /* Responsive om os-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+  .about-hero {
+    padding-top: calc(var(--nav-height) + 1.5rem);
+  }
+
+  .founder-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .founder-row--reversed {
+    flex-direction: row-reverse;
+  }
+
+  .founder-bio {
+    text-align: left;
   }
 }
 
