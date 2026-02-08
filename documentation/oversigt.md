@@ -67,3 +67,17 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Tilføjet obligatorisk regel om clarifying questions i `.claude/CLAUDE.md`
 
 **AI's rolle:** Claude Code stillede afklarende spørgsmål om design, karrusel-opførsel, navbar-stil og kontaktinfo. Derefter implementerede Claude hele startsiden inkl. responsive layout, billedkarrusel med auto-rotation, scroll-animationer (kun desktop) og SEO-optimering.
+
+---
+
+## Session 006 — 2026-02-08
+
+**Formål:** Oprettelse af servicevilkår-side (vilkår for brug og privatlivspolitik)
+
+**Hvad blev lavet:**
+- Udfyldt `servicevilkår.html` (var tom fil) med komplet indhold: 8 vilkårs-sektioner i individuelle bokse
+- Tilføjet nye `.terms-*` CSS-klasser i `css/style.css` med responsive overrides
+- Layout ligner FAQ-siden men uden expand/collapse — alle bokse er altid synlige
+- Punkt 5 (Databeskyttelse og Cookies) har underpunkter med bullet-liste
+
+**AI's rolle:** Claude Code planlagde implementeringen og oprettede nye CSS-klasser for at undgå kobling til FAQ-klasserne. Alt indhold blev leveret af Simon og placeret i semantisk HTML5-struktur med korrekte ARIA-labels.
