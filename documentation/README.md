@@ -54,6 +54,7 @@ session-002.md -->           Claude svarede             der blev ændret
 | 004 | 2026-02-07 | Oprettelse af komplet startside (index.html) med CSS, JS, OG tags, Schema markup | [samtale](samtaler/session-004_2026-02-07.md) | [ændringer](ai-aendringer/session-004_2026-02-07.md) |
 | 006 | 2026-02-08 | Oprettelse af servicevilkår-side med vilkår for brug og privatlivspolitik | [samtale](samtaler/session-006_2026-02-08.md) | [ændringer](ai-aendringer/session-006_2026-02-08.md) |
 | 008 | 2026-02-08 | Oprettelse af produkter-side med app deep-dive showcase | [samtale](samtaler/session-008_2026-02-08.md) | [ændringer](ai-aendringer/session-008_2026-02-08.md) |
+| 010 | 2026-02-09 | Oprettelse af kontaktside med kontaktinfo og founder-kort | [samtale](samtaler/session-010_2026-02-09.md) | [ændringer](ai-aendringer/session-010_2026-02-09.md) |
 
 ## Værktøjer brugt
 

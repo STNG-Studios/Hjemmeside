@@ -1094,6 +1094,138 @@ ul {
 }
 
 /* ============================================
+   KONTAKT — HERO-SEKTION
+   ============================================ */
+
+/* Kontakt hero med centreret tekst og nav-padding. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.contact-hero {
+  padding: calc(var(--nav-height) + 3rem) 1.5rem 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-hero h1 {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.contact-hero-text {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   KONTAKT — GENEREL KONTAKTINFO
+   ============================================ */
+
+/* Generel kontakt-sektion med gradient-baggrund. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.contact-general {
+  background: var(--gradient);
+  padding: 7rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.contact-general h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Email-link som pill-formet knap med ikon. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  padding: 1rem 2rem;
+  background-color: var(--bg-secondary);
+  border-radius: 50px;
+  transition: background-color var(--transition-speed) ease,
+              box-shadow var(--transition-speed) ease;
+  margin-bottom: 2.5rem;
+}
+
+.contact-email:hover {
+  background-color: var(--accent);
+  color: var(--text-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.contact-email svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* Sociale medier-ikoner (større end footer-ikoner). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.contact-social {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  transition: background-color var(--transition-speed) ease,
+              color var(--transition-speed) ease,
+              transform var(--transition-speed) ease;
+}
+
+.contact-social a:hover {
+  background-color: var(--accent);
+  color: var(--text-primary);
+  transform: translateY(-4px);
+}
+
+.contact-social svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* ============================================
+   KONTAKT — TEAM-KORT
+   ============================================ */
+
+/* Team-sektion med polaroid-kort for co-founders. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.contact-team {
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.contact-team h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Omvendt bølge-divider (bund-af-sektion variant). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+.wave-divider--flipped {
+  margin-bottom: 0;
+  margin-top: -80px;
+}
+
+/* ============================================
    404-FEJLSIDE
    ============================================ */
 
@@ -1345,6 +1477,18 @@ ul {
 
   .feature-text p {
     margin: 0;
+  }
+
+  /* Responsive kontakt-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+  .contact-hero {
+    padding-top: calc(var(--nav-height) + 4rem);
+    padding-bottom: 3rem;
+  }
+
+  .contact-cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
   }
 }
 

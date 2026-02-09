@@ -95,3 +95,17 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Ingen ændringer nødvendige i JavaScript — eksisterende kode virker automatisk
 
 **AI's rolle:** Claude Code brainstormede tre layout-tilgange med Simon og stillede afklarende spørgsmål om hero-design, billeder og CTA. Simon valgte "Apple Product Page"-stilen. Claude implementerede hele siden.
+
+---
+
+## Session 010 — 2026-02-09
+
+**Formål:** Oprettelse af kontaktside (kontakt.html)
+
+**Hvad blev lavet:**
+- Oprettet `kontakt.html` med hero-sektion, generel kontaktinfo (email + sociale medier), team-kort (polaroid-stil) og footer
+- Tilføjet nye `.contact-*` CSS-klasser i `css/style.css` med responsive breakpoints
+- Genbrugt polaroid-kort design fra om-os.html og bølge-dividere fra øvrige sider
+- Ingen ny JavaScript — eksisterende scroll-animationer og hamburger-menu virker automatisk
+
+**AI's rolle:** Simon var i tvivl om hvad kontaktsiden skulle indeholde for ikke at se tom ud. Claude foreslog flere tilgange, og Simon valgte en løsning med generel kontaktinfo (email + SoMe) og polaroid-kort for co-founders — uden kontaktformular. Claude implementerede hele siden.
