@@ -19,7 +19,7 @@
 
 /* CSS Custom Properties (farvevariabler). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 :root {
-  --bg-primary: #0a0a12;
+  --bg-primary: #141423;
   --bg-secondary: #111128;
   --bg-tertiary: #1a1a2e;
   --accent: #2a2a5e;
@@ -211,6 +211,16 @@ ul {
   padding: var(--nav-height) 1.5rem 2rem;
 }
 
+/* Bølgekant i bunden af hero via absolut positioneret wave-divider. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
+.wave-divider.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
 .hero::after {
   content: '';
   position: absolute;
@@ -347,6 +357,11 @@ ul {
   margin: 0 auto;
 }
 
+/* CTA-knap med margin i app-tekst sektionen. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
+.app-text .cta-button {
+  margin-top: 1.5rem;
+}
+
 /* Scroll-animation klasser (bruges af JS). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .slide-in-left,
 .slide-in-right {
@@ -370,6 +385,11 @@ ul {
   display: block;
   width: 100%;
   height: 80px;
+}
+
+/* Wave-divider fill styret via CSS-variabel med --bg-primary som default. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
+.wave-divider path {
+  fill: var(--wave-fill, var(--bg-primary));
 }
 
 /* Founder's note sektion med billede og tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
@@ -511,10 +531,10 @@ ul {
   color: var(--text-primary);
 }
 
+/* Fjernet fill: currentColor så stroke-baserede SVGs (email, Instagram) renderes korrekt. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .footer-social svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 
 .footer-bottom {
@@ -1199,9 +1219,11 @@ ul {
    ============================================ */
 
 /* Team-sektion med polaroid-kort for co-founders. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
+/* Lysere lilla baggrund end .contact-general for visuel kontrast. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .contact-team {
   padding: 5rem 1.5rem;
   text-align: center;
+  background-color: #212150;
 }
 
 .contact-team h2 {
