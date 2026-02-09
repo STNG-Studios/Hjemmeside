@@ -378,8 +378,8 @@ ul {
   line-height: 0;
   position: relative;
   z-index: 1;
-  margin-top: -1px;
   margin-bottom: -80px;
+  margin-top: -5px;
 }
 
 .wave-divider svg {
@@ -922,15 +922,18 @@ ul {
    ============================================ */
 
 /* Product hero med app-showcase billede og introduktionstekst. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
+/* background-color tilføjet for at dække sub-pixel gap — hero var gennemsigtig så feature-sektionens lilla skinede igennem. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .product-hero {
   padding: calc(var(--nav-height) + 3rem) 1.5rem 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
   z-index: 2;
+  background-color: var(--bg-primary);
 }
 
+/* max-width flyttet hertil så .product-hero er full-width med baggrund. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .product-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1253,6 +1256,7 @@ ul {
    ============================================ */
 
 /* 404 top-sektion: centrerer 404-displayet. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
+/* will-change: transform forhindrer sub-pixel gap efter animationer. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .error-top {
   display: flex;
   align-items: center;
@@ -1260,6 +1264,7 @@ ul {
   min-height: 55vh;
   padding: calc(var(--nav-height) + 2rem) 1.5rem 4rem;
   text-align: center;
+  will-change: transform;
 }
 
 /* 404 bund-sektion: accent-baggrund med tekst og knap. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
