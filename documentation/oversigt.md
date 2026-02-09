@@ -109,3 +109,28 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Ingen ny JavaScript — eksisterende scroll-animationer og hamburger-menu virker automatisk
 
 **AI's rolle:** Simon var i tvivl om hvad kontaktsiden skulle indeholde for ikke at se tom ud. Claude foreslog flere tilgange, og Simon valgte en løsning med generel kontaktinfo (email + SoMe) og polaroid-kort for co-founders — uden kontaktformular. Claude implementerede hele siden.
+
+---
+
+## Session 012 — 2026-02-09
+
+**Formål:** Komplet SEO-optimering af alle sider med schema markup og meta tags
+
+**Hvad blev lavet:**
+- Udvidet Organization schema på index.html med founders, foundingDate, numberOfEmployees, areaServed m.m.
+- Tilføjet WebSite schema på index.html
+- Tilføjet AboutPage + 2x Person schema på om-os.html (Simon Trinderup + Noah Grejsen med LinkedIn, roller, kompetencer)
+- Tilføjet SoftwareApplication + BreadcrumbList schema på produkter.html
+- Tilføjet FAQPage schema med alle 8 Q&A-par på faq.html
+- Tilføjet ContactPage schema med 3 ContactPoints på kontakt.html
+- Tilføjet canonical URLs, Twitter Card tags, og:image, robots, author og theme-color meta tags på alle sider
+- Oprettet robots.txt (blokerer /documentation/)
+- Oprettet sitemap.xml med alle 6 offentlige sider
+
+**Neomi-opdatering:**
+- Simon gav komplet Neomi app-dokumentation, og Claude opdaterede SoftwareApplication schema med præcise data (navn, priser, 12 features, 21 aktiviteter)
+- Rettet Apple Watch → iPhone only i FAQ tekst og schema
+- Tilføjet Neomi-reference i synlig tekst på index.html og produkter.html
+- Tilføjet SwiftUI til Simon's Person schema knowsAbout
+
+**AI's rolle:** Simon bad om grundig SEO-optimering. Claude stillede afklarende spørgsmål om stiftelsesdato, roller, LinkedIn-profiler, app-navn og app-status. Derefter designede og implementerede Claude alle schema markup og meta tags systematisk. Efterfølgende gav Simon en komplet app-dokumentation for Neomi, og Claude opdaterede alt med præcise app-data.

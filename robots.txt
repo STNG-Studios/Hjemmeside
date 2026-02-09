@@ -1,0 +1,8 @@
+# robots.txt for STNG Studios (stng-studios.dk)
+# Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md
+
+User-agent: *
+Allow: /
+Disallow: /documentation/
+
+Sitemap: https://stng-studios.dk/sitemap.xml
