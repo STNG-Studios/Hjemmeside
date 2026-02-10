@@ -107,44 +107,23 @@
   </header>
 
   <main>
-    <!-- Hero-sektion med team-billede i afrundet boks og overlay hook-tekst. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
+    <!-- Full-width hero med team-billede, overlay tekst og bølget underkant via mask-image. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
     <section class="about-hero" aria-label="Om os hero">
-      <div class="about-hero-box">
-        <div class="about-hero-placeholder" aria-label="Placeholder for team-billede">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-          </svg>
-        </div>
-        <div class="about-hero-overlay">
-          <h1>Vi bygger fremtidens apps</h1>
-          <p>To co-founders. Én mission. Uendelige muligheder.</p>
-        </div>
+      <img class="about-hero-bg" src="img/simon-trinderuo-og-noah-hvelpund-grejsen-om-os-hero.webp" alt="Simon Trinderup og Noah Hvelplund Grejsen, co-founders af STNG Studios" loading="eager">
+      <div class="about-hero-overlay">
+        <h1>Vi bygger fremtidens apps</h1>
+        <p>Drevet af nysgerrighed.</p>
       </div>
     </section>
-
-    <!-- Bølge-divider mellem hero og founders. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
-    <div class="wave-divider" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,0 L1440,0 L1440,60 C1200,120 960,0 720,60 C480,120 240,0 0,60 Z"/>
-      </svg>
-    </div>
 
     <!-- Founder-sektioner med alternerende layout og polaroid-kort. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
     <section class="about-founders" aria-label="Vores co-founders">
 
-      <!-- Simon Trinderup — billede venstre, tekst højre. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
+      <!-- Simon Trinderup — billede venstre, tekst højre. Profilbillede tilføjet. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
       <article class="founder-row">
         <div class="polaroid-card slide-in-left" data-animate-once>
           <div class="polaroid-image">
-            <div class="polaroid-placeholder" aria-label="Placeholder for Simon Trinderup portræt">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-            </div>
+            <img src="img/simon-trinderup-profil-stng-stusios-om-os.webp" alt="Simon Trinderup, Co-Founder af STNG Studios" loading="lazy">
           </div>
           <div class="polaroid-info">
             <h3>Simon Trinderup</h3>
@@ -165,26 +144,22 @@
           </div>
         </div>
 
+        <!-- Simon Trinderup bio. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
         <div class="founder-bio slide-in-right" data-animate-once>
           <h2>Simon Trinderup</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <p>Jeg har altid været facineret af at få ny viden og udfordre det etablerede. På et tidspunkt kastede jeg mig over kode og design, derefter var der ikke rigtig nogen vej tilbage. Jeg læser e-commerce på Erhvervsakademi Aarhus, men for at være ærlig har YouTube og sene aftener foran skærmen lært mig mindst lige så meget som noget pensum.</p>
+          <p>I STNG Studios er jeg ham der bygger tingene. Hvis Noah siger "vi skal lave det her", så finder jeg ud af hvordan. Det fedeste er når en idé vi har snakket om over aftensmad pludselig kører på en telefon.</p>
         </div>
       </article>
 
-      <!-- Noah Grejsen — billede højre, tekst venstre. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
+      <!-- Noah Grejsen — billede højre, tekst venstre. Profilbillede tilføjet. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
       <article class="founder-row founder-row--reversed">
         <div class="polaroid-card slide-in-right" data-animate-once>
           <div class="polaroid-image">
-            <div class="polaroid-placeholder" aria-label="Placeholder for Noah Grejsen portræt">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-            </div>
+            <img src="img/noah-hvelplund-grejsen-stng-strudios-om-os.webp" alt="Noah Hvelplund Grejsen, Co-Founder af STNG Studios" loading="lazy">
           </div>
           <div class="polaroid-info">
-            <h3>Noah Grejsen</h3>
+            <h3>Noah H. Grejsen</h3>
             <p class="polaroid-role">Co-Founder</p>
             <div class="polaroid-links">
               <a href="mailto:noah.g@stng-studios.dk" aria-label="Send email til Noah">
@@ -202,10 +177,11 @@
           </div>
         </div>
 
+        <!-- Noah Grejsen bio. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
         <div class="founder-bio slide-in-left" data-animate-once>
-          <h2>Noah Grejsen</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <h2>Noah H. Grejsen</h2>
+          <p>Simon og jeg mødte hinanden i et salgsjob, kort efter endte vi med at dele lejlighed og tilsyneladende også en drøm om at starte noget selv. Jeg læser finans, men det er iværksætteri der holder mig vågen om natten. Ikke regneark — men tanken om at bygge noget der vokser.</p>
+          <p>Jeg er den i STNG Studios der tænker i kroner, kunder og retning. Simon bygger produktet. Jeg sørger for det kommer ud i verden. Det lyder simpelt, men det er det bedste samarbejde jeg har haft.</p>
         </div>
       </article>
 

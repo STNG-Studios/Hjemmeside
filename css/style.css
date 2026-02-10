@@ -430,6 +430,16 @@ ul {
   opacity: 0.3;
 }
 
+/* Stifterbillede i founders note. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
+.founder-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 40px;
+  corner-shape: squircle;
+  display: block;
+}
+
 .founder-text {
   text-align: center;
 }
@@ -585,7 +595,7 @@ ul {
 }
 
 .faq-item {
-  background-color: var(--bg-secondary);
+  background-color: var(--accent);
   border-radius: 40px;
   corner-shape: squircle;
   overflow: hidden;
@@ -692,7 +702,7 @@ ul {
 }
 
 .terms-item {
-  background-color: var(--bg-secondary);
+  background-color: var(--accent);
   border-radius: 40px;
   corner-shape: squircle;
   padding: 2rem 2rem;
@@ -734,16 +744,42 @@ ul {
    OM OS — HERO-SEKTION
    ============================================ */
 
-/* Hero-sektion med team-billede i afrundet boks og overlay tekst. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
+/* Full-width hero med team-billede og bølget underkant via SVG mask. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
 .about-hero {
-  padding: calc(var(--nav-height) + 1rem) 5% 3rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 960' preserveAspectRatio='none'%3E%3Cpath d='M0,0 H1440 V860 C1200,960 960,760 720,860 C480,960 240,760 0,860 Z' fill='white'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 960' preserveAspectRatio='none'%3E%3Cpath d='M0,0 H1440 V860 C1200,960 960,760 720,860 C480,960 240,760 0,860 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
-.about-hero-box {
-  position: relative;
-  border-radius: 40px;
-  corner-shape: squircle;
-  overflow: hidden;
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 18, 0.3) 0%,
+    rgba(10, 10, 18, 0.1) 50%,
+    rgba(10, 10, 18, 0.8) 100%
+  );
+  z-index: 0;
 }
 
 .about-hero-placeholder {
@@ -762,19 +798,14 @@ ul {
 }
 
 .about-hero-overlay {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(
-    to bottom,
-    rgba(10, 10, 18, 0.2) 0%,
-    rgba(10, 10, 18, 0.5) 100%
-  );
 }
 
 .about-hero-overlay h1 {
@@ -799,7 +830,8 @@ ul {
 /* Gradient-baggrund for founders-sektionen. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
 .about-founders {
   background: var(--gradient);
-  padding: 8rem 1.5rem 5rem;
+  margin-top: -20vh;
+  padding: calc(8rem + 15vh) 1.5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -830,6 +862,14 @@ ul {
   border-radius: 18px;
   corner-shape: squircle;
   overflow: hidden;
+}
+
+/* Profilbilleder i polaroid-kort. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
+.polaroid-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
 }
 
 .polaroid-placeholder {

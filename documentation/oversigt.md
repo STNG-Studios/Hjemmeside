@@ -134,3 +134,20 @@ Denne fil indeholder en kort, kronologisk beskrivelse af hver AI-session.
 - Tilføjet SwiftUI til Simon's Person schema knowsAbout
 
 **AI's rolle:** Simon bad om grundig SEO-optimering. Claude stillede afklarende spørgsmål om stiftelsesdato, roller, LinkedIn-profiler, app-navn og app-status. Derefter designede og implementerede Claude alle schema markup og meta tags systematisk. Efterfølgende gav Simon en komplet app-dokumentation for Neomi, og Claude opdaterede alt med præcise app-data.
+
+---
+
+## Session 014 — 2026-02-10
+
+**Formål:** Salgsorienteret copywriting for hele hjemmesiden, indsættelse af rigtige billeder og omstrukturering af om-os hero
+
+**Hvad blev lavet:**
+- Al synlig copy på produkter.html opdateret med salgsfokuseret tekst (overblik, vaneopbygning, data-indsigt)
+- Hero sub-lines på index.html og om-os.html opdateret efter flere iterationer
+- App showcase tekst på index.html opdateret
+- 4 SVG-placeholders erstattet med rigtige billeder på om-os.html, index.html og kontakt.html
+- Bio-tekster for Simon og Noah skrevet i uformel, jordnær storytelling-stil
+- Om-os hero omstruktureret fra boks-layout til full-width med CSS mask-image (bølget bund)
+- Gap mellem hero og founders-sektion lukket med negativ margin + kompenserende padding
+
+**AI's rolle:** Simon instruerede Claude til at agere som copywriter. Claude stillede afklarende spørgsmål og itererede tekster flere gange efter Simons feedback. Hero sub-lines og bio-tekster krævede 3-5 iterationer. Hero-omstruktureringen krævede tre tekniske tilgange (wave divider → clip-path → CSS mask) før den endelige løsning.

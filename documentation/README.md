@@ -56,6 +56,7 @@ session-002.md -->           Claude svarede             der blev ændret
 | 008 | 2026-02-08 | Oprettelse af produkter-side med app deep-dive showcase | [samtale](samtaler/session-008_2026-02-08.md) | [ændringer](ai-aendringer/session-008_2026-02-08.md) |
 | 010 | 2026-02-09 | Oprettelse af kontaktside med kontaktinfo og founder-kort | [samtale](samtaler/session-010_2026-02-09.md) | [ændringer](ai-aendringer/session-010_2026-02-09.md) |
 | 012 | 2026-02-09 | SEO-optimering: schema markup, meta tags, robots.txt, sitemap.xml | [samtale](samtaler/session-012_2026-02-09.md) | [ændringer](ai-aendringer/session-012_2026-02-09.md) |
+| 014 | 2026-02-10 | Salgsorienteret copywriting, rigtige billeder, om-os hero omstrukturering | [samtale](samtaler/session-014_2026-02-10.md) | [ændringer](ai-aendringer/session-014_2026-02-10.md) |
 
 ## Værktøjer brugt
 
