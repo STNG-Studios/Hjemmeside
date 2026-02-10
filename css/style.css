@@ -1429,7 +1429,7 @@ ul {
   }
 
   .founder-content {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
   }
 
