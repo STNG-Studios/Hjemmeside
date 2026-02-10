@@ -81,7 +81,7 @@ Hvis `/eksporter` ikke virker, kan du stadig køre scriptet manuelt:
 
 ```bash
 # Find nyeste session-ID
-ls -lt ~/.claude/projects/-Users-simontrinderup-STNG-Studions-Hjemmeside/*.jsonl | head -1
+ls -lt ~/.claude/projects/-Users-simontrinderup-STNG-Studios-Hjemmeside/*.jsonl | head -1
 
 # Kør eksport med UUID'et fra kommandoen ovenfor
 python3 documentation/eksporter-samtale.py SESSION_UUID documentation/samtaler/session-NNN_DATO.md

@@ -8,7 +8,7 @@ Argumenter (valgfrit): $ARGUMENTS
 
 2. **Find den nyeste JSONL-fil:** Kør denne kommando for at finde session-ID'et (UUID) for den nyeste samtale:
    ```
-   ls -t ~/.claude/projects/-Users-simontrinderup-STNG-Studions-Hjemmeside/*.jsonl | head -1
+   ls -t ~/.claude/projects/-Users-simontrinderup-STNG-Studios-Hjemmeside/*.jsonl | head -1
    ```
    Udtræk UUID'et fra filnavnet (alt før `.jsonl`).
 
