@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STNG Studios — App-udvikling fra Aarhus</title>
+  <title>STNG Studios — App-udvikling fra Aarhus | STNG Studios ApS</title>
   <!-- Meta description opdateret med Neomi. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
-  <meta name="description" content="STNG Studios ApS — skaberne bag Neomi, en minimalistisk iOS habit-tracking app. Vi udvikler innovative apps fra Aarhus.">
+  <meta name="description" content="STNG Studios ApS — grundlagt af Simon Trinderup og Noah Grejsen. Skaberne bag Neomi, en minimalistisk iOS habit-tracking app. Vi udvikler innovative apps fra Aarhus.">
   <!-- Ekstra meta tags for SEO. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <meta name="robots" content="index, follow">
   <meta name="author" content="STNG Studios ApS">
@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://stng-studios.dk/">
 
   <!-- Open Graph meta tags for social media deling. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md -->
-  <meta property="og:title" content="STNG Studios — App-udvikling fra Aarhus">
+  <meta property="og:title" content="STNG Studios — App-udvikling fra Aarhus | STNG Studios ApS">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stng-studios.dk/">
   <meta property="og:image" content="https://stng-studios.dk/img/STNG-Studios-OG-billede-20.jpg">
@@ -23,24 +23,26 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:description" content="STNG Studios ApS — skaberne bag Neomi, en minimalistisk iOS habit-tracking app. Vi udvikler innovative apps fra Aarhus.">
+  <meta property="og:description" content="STNG Studios ApS — grundlagt af Simon Trinderup og Noah Grejsen. Skaberne bag Neomi, en minimalistisk iOS habit-tracking app fra Aarhus.">
   <meta property="og:site_name" content="STNG Studios">
   <meta property="og:locale" content="da_DK">
 
   <!-- Twitter Card meta tags. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="STNG Studios — App-udvikling fra Aarhus">
-  <meta name="twitter:description" content="STNG Studios ApS — skaberne bag Neomi, en minimalistisk iOS habit-tracking app. Vi udvikler innovative apps fra Aarhus.">
+  <meta name="twitter:title" content="STNG Studios — App-udvikling fra Aarhus | STNG Studios ApS">
+  <meta name="twitter:description" content="STNG Studios ApS — grundlagt af Simon Trinderup og Noah Grejsen. Skaberne bag Neomi, en minimalistisk iOS habit-tracking app fra Aarhus.">
   <meta name="twitter:image" content="https://stng-studios.dk/img/STNG-Studios-OG-billede-20.jpg">
   <meta name="twitter:image:alt" content="STNG Studios hero-banner med mørkt design og 3D app-ikoner">
 
-  <!-- Udvidet Organization schema markup (JSON-LD). Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
+  <!-- Udvidet Organization schema markup (JSON-LD) med @id entity-linking. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://stng-studios.dk/#organization",
     "name": "STNG Studios ApS",
     "legalName": "STNG Studios ApS",
+    "alternateName": ["STNG Studios", "STNG"],
     "url": "https://stng-studios.dk",
     "logo": {
       "@type": "ImageObject",
@@ -72,17 +74,22 @@
     "founder": [
       {
         "@type": "Person",
+        "@id": "https://stng-studios.dk/#simon-trinderup",
         "name": "Simon Trinderup",
         "jobTitle": "Co-Founder",
         "email": "simon.t@stng-studios.dk",
+        "image": "https://stng-studios.dk/img/simon-trinderup-profil-stng-studios-om-os.webp",
         "sameAs": "https://www.linkedin.com/in/simont02",
         "knowsAbout": ["App-udvikling", "iOS-udvikling", "SwiftUI", "Software engineering", "UI/UX design", "Marketing", "Idéudvikling"]
       },
       {
         "@type": "Person",
+        "@id": "https://stng-studios.dk/#noah-grejsen",
         "name": "Noah Grejsen",
+        "alternateName": ["Noah Hvelplund Grejsen", "Noah H. Grejsen"],
         "jobTitle": "Co-Founder",
         "email": "noah.g@stng-studios.dk",
+        "image": "https://stng-studios.dk/img/noah-hvelplund-grejsen-stng-studios-om-os.webp",
         "sameAs": "https://www.linkedin.com/in/noah-hvelplund-grejsen-380354249",
         "knowsAbout": ["Forretningsudvikling", "Økonomi", "Salg", "Marketing", "Kvalitetssikring"]
       }
@@ -93,24 +100,39 @@
       "name": "DK"
     },
     "knowsLanguage": "da",
-    "sameAs": []
+    "sameAs": ["https://www.linkedin.com/company/stng-studios"]
   }
   </script>
 
-  <!-- WebSite schema for søgemaskine-integration. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
+  <!-- WebSite schema med @id entity-linking. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://stng-studios.dk/#website",
     "name": "STNG Studios",
     "url": "https://stng-studios.dk",
     "description": "STNG Studios ApS udvikler innovative apps fra Aarhus.",
     "publisher": {
-      "@type": "Organization",
-      "name": "STNG Studios ApS",
-      "url": "https://stng-studios.dk"
+      "@id": "https://stng-studios.dk/#organization"
     },
     "inLanguage": "da"
+  }
+  </script>
+
+  <!-- BreadcrumbList schema for forside. Lavet med AI. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Forside",
+        "item": "https://stng-studios.dk/"
+      }
+    ]
   }
   </script>
 
@@ -204,7 +226,7 @@
     <section class="founder-section" id="founder" aria-label="Stifterens note">
       <article class="founder-content">
         <figure class="founder-image">
-          <img src="img/noah-hvelplund-grejsen-og-simon-trinfderup-stng-studios-founders-note.webp" alt="Noah Hvelplund Grejsen og Simon Trinderup, stiftere af STNG Studios" loading="lazy">
+          <img src="img/noah-hvelplund-grejsen-og-simon-trinderup-stng-studios-founders-note.webp" alt="Noah Hvelplund Grejsen og Simon Trinderup, stiftere af STNG Studios, Aarhus" loading="lazy">
         </figure>
 
         <article class="founder-text">

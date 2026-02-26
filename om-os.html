@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om os — STNG Studios</title>
-  <meta name="description" content="Mød folkene bag STNG Studios ApS. To co-founders fra Aarhus med passion for app-udvikling og digitale løsninger.">
+  <title>Simon Trinderup & Noah Grejsen — Folkene bag STNG Studios</title>
+  <meta name="description" content="Mød Simon Trinderup og Noah Hvelplund Grejsen — co-founders af STNG Studios ApS. To iværksættere fra Aarhus med passion for app-udvikling og digitale løsninger.">
   <!-- Ekstra meta tags for SEO. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <meta name="robots" content="index, follow">
   <meta name="author" content="STNG Studios ApS">
@@ -14,7 +14,7 @@
   <link rel="canonical" href="https://stng-studios.dk/om-os">
 
   <!-- Open Graph meta tags. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md -->
-  <meta property="og:title" content="Om os — STNG Studios">
+  <meta property="og:title" content="Simon Trinderup & Noah Grejsen — Folkene bag STNG Studios">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://stng-studios.dk/om-os">
   <meta property="og:image" content="https://stng-studios.dk/img/STNG-Studios-OG-billede-20.jpg">
@@ -22,61 +22,97 @@
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:description" content="Mød folkene bag STNG Studios ApS. To co-founders fra Aarhus med passion for app-udvikling.">
+  <meta property="og:description" content="Mød Simon Trinderup og Noah Hvelplund Grejsen — co-founders af STNG Studios ApS i Aarhus.">
   <meta property="og:site_name" content="STNG Studios">
   <meta property="og:locale" content="da_DK">
 
   <!-- Twitter Card meta tags. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Om os — STNG Studios">
-  <meta name="twitter:description" content="Mød folkene bag STNG Studios ApS. To co-founders fra Aarhus med passion for app-udvikling.">
+  <meta name="twitter:title" content="Simon Trinderup & Noah Grejsen — Folkene bag STNG Studios">
+  <meta name="twitter:description" content="Mød Simon Trinderup og Noah Hvelplund Grejsen — co-founders af STNG Studios ApS i Aarhus.">
   <meta name="twitter:image" content="https://stng-studios.dk/img/STNG-Studios-OG-billede-20.jpg">
   <meta name="twitter:image:alt" content="STNG Studios hero-banner">
 
-  <!-- AboutPage + Person schema markup (JSON-LD). Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
+  <!-- AboutPage schema med @id-referencer. Lavet med AI, kig i documentation/samtaler/session-012_2026-02-09.md -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "Om os — STNG Studios",
-    "description": "Mød folkene bag STNG Studios ApS. To co-founders fra Aarhus med passion for app-udvikling og digitale løsninger.",
+    "description": "Mød Simon Trinderup og Noah Hvelplund Grejsen — co-founders af STNG Studios ApS i Aarhus.",
     "url": "https://stng-studios.dk/om-os",
     "mainEntity": {
-      "@type": "Organization",
-      "name": "STNG Studios ApS",
-      "url": "https://stng-studios.dk",
-      "foundingDate": "2025-08",
-      "member": [
-        {
-          "@type": "Person",
-          "name": "Simon Trinderup",
-          "jobTitle": "Co-Founder",
-          "description": "Teknisk founder hos STNG Studios. Ansvarlig for udvikling, implementering, UI/UX design, marketing og idéudvikling.",
-          "email": "simon.t@stng-studios.dk",
-          "sameAs": "https://www.linkedin.com/in/simont02",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "STNG Studios ApS",
-            "url": "https://stng-studios.dk"
-          },
-          "knowsAbout": ["App-udvikling", "iOS-udvikling", "SwiftUI", "Software engineering", "UI/UX design", "Marketing", "Idéudvikling"]
-        },
-        {
-          "@type": "Person",
-          "name": "Noah Grejsen",
-          "jobTitle": "Co-Founder",
-          "description": "Forretnings-founder hos STNG Studios. Ansvarlig for økonomi, salg, kvalitetssikring, marketing og idéudvikling.",
-          "email": "noah.g@stng-studios.dk",
-          "sameAs": "https://www.linkedin.com/in/noah-hvelplund-grejsen-380354249",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "STNG Studios ApS",
-            "url": "https://stng-studios.dk"
-          },
-          "knowsAbout": ["Forretningsudvikling", "Økonomi", "Salg", "Kvalitetssikring", "Marketing", "Idéudvikling"]
-        }
-      ]
+      "@id": "https://stng-studios.dk/#organization"
     }
+  }
+  </script>
+
+  <!-- Person schema for Simon Trinderup — selvstændig entitet for navne-søgninger. Lavet med AI. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://stng-studios.dk/#simon-trinderup",
+    "name": "Simon Trinderup",
+    "url": "https://stng-studios.dk/om-os",
+    "image": "https://stng-studios.dk/img/simon-trinderup-profil-stng-studios-om-os.webp",
+    "jobTitle": "Co-Founder",
+    "description": "Teknisk co-founder hos STNG Studios ApS i Aarhus. Ansvarlig for app-udvikling, iOS-udvikling med SwiftUI, UI/UX design, marketing og idéudvikling.",
+    "email": "simon.t@stng-studios.dk",
+    "worksFor": {
+      "@id": "https://stng-studios.dk/#organization"
+    },
+    "sameAs": ["https://www.linkedin.com/in/simont02"],
+    "knowsAbout": ["App-udvikling", "iOS-udvikling", "SwiftUI", "Software engineering", "UI/UX design", "Marketing", "Idéudvikling"],
+    "knowsLanguage": ["da", "en"],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Erhvervsakademi Aarhus"
+    }
+  }
+  </script>
+
+  <!-- Person schema for Noah Grejsen — selvstændig entitet for navne-søgninger. Lavet med AI. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://stng-studios.dk/#noah-grejsen",
+    "name": "Noah Grejsen",
+    "alternateName": ["Noah Hvelplund Grejsen", "Noah H. Grejsen"],
+    "url": "https://stng-studios.dk/om-os",
+    "image": "https://stng-studios.dk/img/noah-hvelplund-grejsen-stng-studios-om-os.webp",
+    "jobTitle": "Co-Founder",
+    "description": "Forretnings co-founder hos STNG Studios ApS i Aarhus. Ansvarlig for økonomi, salg, kvalitetssikring, marketing og idéudvikling.",
+    "email": "noah.g@stng-studios.dk",
+    "worksFor": {
+      "@id": "https://stng-studios.dk/#organization"
+    },
+    "sameAs": ["https://www.linkedin.com/in/noah-hvelplund-grejsen-380354249"],
+    "knowsAbout": ["Forretningsudvikling", "Økonomi", "Salg", "Kvalitetssikring", "Marketing", "Idéudvikling"],
+    "knowsLanguage": ["da", "en"]
+  }
+  </script>
+
+  <!-- BreadcrumbList schema for om-os. Lavet med AI. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Forside",
+        "item": "https://stng-studios.dk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Om os",
+        "item": "https://stng-studios.dk/om-os"
+      }
+    ]
   }
   </script>
 
@@ -110,7 +146,7 @@
   <main>
     <!-- Full-width hero med team-billede, overlay tekst og bølget underkant via mask-image. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md -->
     <section class="about-hero" aria-label="Om os hero">
-      <img class="about-hero-bg" src="img/simon-trinderuo-og-noah-hvelpund-grejsen-om-os-hero.webp" alt="Simon Trinderup og Noah Hvelplund Grejsen, co-founders af STNG Studios" loading="eager">
+      <img class="about-hero-bg" src="img/simon-trinderup-og-noah-hvelplund-grejsen-stng-studios-om-os-hero.webp" alt="Simon Trinderup og Noah Hvelplund Grejsen, co-founders af STNG Studios, Aarhus" loading="eager">
       <div class="about-hero-overlay">
         <h1>Vi bygger fremtidens apps</h1>
         <p>Drevet af nysgerrighed.</p>
@@ -124,7 +160,7 @@
       <article class="founder-row">
         <div class="polaroid-card slide-in-left" data-animate-once>
           <div class="polaroid-image">
-            <img src="img/simon-trinderup-profil-stng-stusios-om-os.webp" alt="Simon Trinderup, Co-Founder af STNG Studios" loading="lazy">
+            <img src="img/simon-trinderup-profil-stng-studios-om-os.webp" alt="Simon Trinderup, Co-Founder af STNG Studios, Aarhus" loading="lazy">
           </div>
           <div class="polaroid-info">
             <h3>Simon Trinderup</h3>
@@ -157,7 +193,7 @@
       <article class="founder-row founder-row--reversed">
         <div class="polaroid-card slide-in-right" data-animate-once>
           <div class="polaroid-image">
-            <img src="img/noah-hvelplund-grejsen-stng-strudios-om-os.webp" alt="Noah Hvelplund Grejsen, Co-Founder af STNG Studios" loading="lazy">
+            <img src="img/noah-hvelplund-grejsen-stng-studios-om-os.webp" alt="Noah Hvelplund Grejsen, Co-Founder af STNG Studios, Aarhus" loading="lazy">
           </div>
           <div class="polaroid-info">
             <h3>Noah H. Grejsen</h3>
