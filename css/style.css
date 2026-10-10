@@ -1203,6 +1203,21 @@ ul {
   box-shadow: 0 0 20px var(--accent-glow);
 }
 
+.cta-button--secondary {
+  background-color: transparent;
+}
+
+.cta-button--secondary:hover {
+  background-color: var(--accent);
+}
+
+.app-text .cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 /* ============================================
    KONTAKT — HERO-SEKTION
    ============================================ */
