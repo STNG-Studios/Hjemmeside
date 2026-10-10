@@ -1,4 +1,3 @@
-/* Self-hosted Inter font (GDPR-venlig — ingen data sendes til Google). Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -17,7 +16,6 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* CSS Custom Properties (farvevariabler). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 :root {
   --bg-primary: #141423;
   --bg-secondary: #111128;
@@ -34,7 +32,6 @@
   --transition-speed: 0.3s;
 }
 
-/* Global reset og base-styling. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 *,
 *::before,
 *::after {
@@ -79,7 +76,6 @@ ul {
    HEADER / NAVBAR
    ============================================ */
 
-/* Sticky navigation med transparent-til-solid overgang. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .site-header {
   position: fixed;
   top: 0;
@@ -118,7 +114,6 @@ ul {
   width: auto;
 }
 
-/* Hamburger-menu knap til mobil. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -151,7 +146,6 @@ ul {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobilmenu (overlay). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .nav-menu {
   position: fixed;
   top: 0;
@@ -196,7 +190,6 @@ ul {
    HERO-SEKTION
    ============================================ */
 
-/* Full-width hero med baggrundsbillede og centreret tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -211,7 +204,6 @@ ul {
   padding: var(--nav-height) 1.5rem 2rem;
 }
 
-/* Bølgekant i bunden af hero via absolut positioneret wave-divider. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .wave-divider.hero-wave {
   position: absolute;
   bottom: -1px;
@@ -259,7 +251,6 @@ ul {
    APP-SEKTION
    ============================================ */
 
-/* App-showcase sektion med karrusel og tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .app-section {
   padding: 5rem 1.5rem;
   max-width: 1200px;
@@ -289,7 +280,6 @@ ul {
   align-items: center;
 }
 
-/* Billedkarrusel til app-screenshots. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .carousel-container {
   width: 100%;
   max-width: 320px;
@@ -357,12 +347,10 @@ ul {
   margin: 0 auto;
 }
 
-/* CTA-knap med margin i app-tekst sektionen. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .app-text .cta-button {
   margin-top: 1.5rem;
 }
 
-/* Scroll-animation klasser (bruges af JS). Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .slide-in-left,
 .slide-in-right {
   opacity: 1;
@@ -373,7 +361,6 @@ ul {
    FOUNDER'S NOTE
    ============================================ */
 
-/* Bølge-divider mellem app-showcase og founder's note. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .wave-divider {
   line-height: 0;
   position: relative;
@@ -388,12 +375,10 @@ ul {
   height: 80px;
 }
 
-/* Wave-divider fill styret via CSS-variabel med --bg-primary som default. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .wave-divider path {
   fill: var(--wave-fill, var(--bg-primary));
 }
 
-/* Founder's note sektion med billede og tekst. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .founder-section {
   padding: 5rem 1.5rem;
   background: var(--gradient);
@@ -430,7 +415,6 @@ ul {
   opacity: 0.3;
 }
 
-/* Stifterbillede i founders note. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
 .founder-image img {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -471,7 +455,6 @@ ul {
    FOOTER
    ============================================ */
 
-/* Footer med tre kolonner: links, selskabsinfo og social media. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 .site-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background-color: var(--bg-secondary);
@@ -542,7 +525,6 @@ ul {
   color: var(--text-primary);
 }
 
-/* Fjernet fill: currentColor så stroke-baserede SVGs (email, Instagram) renderes korrekt. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .footer-social svg {
   width: 20px;
   height: 20px;
@@ -564,7 +546,6 @@ ul {
    FAQ-SEKTION
    ============================================ */
 
-/* FAQ-header med centreret overskrift og undertekst. Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md */
 .faq-header {
   padding: calc(var(--nav-height) + 3rem) 1.5rem 2rem;
   text-align: center;
@@ -584,7 +565,6 @@ ul {
   line-height: 1.7;
 }
 
-/* FAQ accordion-kort med expand/collapse animation. Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md */
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
@@ -665,7 +645,6 @@ ul {
    SERVICEVILKÅR-SEKTION
    ============================================ */
 
-/* Servicevilkår-header og boks-styling. Lavet med AI, kig i documentation/samtaler/session-006_2026-02-08.md */
 .terms-header {
   padding: calc(var(--nav-height) + 3rem) 1.5rem 2rem;
   text-align: center;
@@ -790,7 +769,6 @@ ul {
    OM OS — HERO-SEKTION
    ============================================ */
 
-/* Full-width hero med team-billede og bølget underkant via SVG mask. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
 .about-hero {
   position: relative;
   min-height: 100vh;
@@ -872,8 +850,6 @@ ul {
    OM OS — FOUNDER-SEKTIONER
    ============================================ */
 
-/* Founder-sektioner med alternerende layout. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
-/* Gradient-baggrund for founders-sektionen. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
 .about-founders {
   background: var(--gradient);
   margin-top: -20vh;
@@ -893,7 +869,6 @@ ul {
   width: 100%;
 }
 
-/* Polaroid-kort styling med ekstra bund-padding. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
 .polaroid-card {
   background-color: var(--bg-secondary);
   border-radius: 24px;
@@ -910,7 +885,6 @@ ul {
   overflow: hidden;
 }
 
-/* Profilbilleder i polaroid-kort. Lavet med AI, kig i documentation/samtaler/session-014_2026-02-10.md */
 .polaroid-image img {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -981,7 +955,6 @@ ul {
   height: 18px;
 }
 
-/* Founder bio-tekst. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
 .founder-bio {
   text-align: center;
 }
@@ -1007,8 +980,6 @@ ul {
    PRODUKTER — HERO-SEKTION
    ============================================ */
 
-/* Product hero med app-showcase billede og introduktionstekst. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
-/* background-color tilføjet for at dække sub-pixel gap — hero var gennemsigtig så feature-sektionens lilla skinede igennem. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .product-hero {
   padding: calc(var(--nav-height) + 3rem) 1.5rem 3rem;
   position: relative;
@@ -1016,7 +987,6 @@ ul {
   background-color: var(--bg-primary);
 }
 
-/* max-width flyttet hertil så .product-hero er full-width med baggrund. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .product-hero-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -1026,7 +996,6 @@ ul {
   gap: 2.5rem;
 }
 
-/* Svæve-animation til hero-billede (subtil op/ned bevægelse). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
 @keyframes product-float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
@@ -1039,7 +1008,6 @@ ul {
   position: relative;
 }
 
-/* Diffus hvid cirkel bag hero-billedet som backlight-effekt. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
 .product-hero-image::before {
   content: '';
   position: absolute;
@@ -1091,7 +1059,6 @@ ul {
    PRODUKTER — FEATURE-SEKTIONER
    ============================================ */
 
-/* Feature-sektioner med individuelle lilla baggrunde og bølge-grænser. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
 .product-feature {
   padding: 5rem 1.5rem;
   display: flex;
@@ -1159,7 +1126,6 @@ ul {
    PRODUKTER — CTA-SEKTION
    ============================================ */
 
-/* Call-to-action sektion med "Kommer snart" og kontakt-knap. Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
 .product-cta {
   padding: 5rem 1.5rem;
   text-align: center;
@@ -1222,7 +1188,6 @@ ul {
    KONTAKT — HERO-SEKTION
    ============================================ */
 
-/* Kontakt hero med centreret tekst og nav-padding. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
 .contact-hero {
   padding: calc(var(--nav-height) + 3rem) 1.5rem 2rem;
   text-align: center;
@@ -1246,7 +1211,6 @@ ul {
    KONTAKT — GENEREL KONTAKTINFO
    ============================================ */
 
-/* Generel kontakt-sektion med gradient-baggrund. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
 .contact-general {
   background: var(--gradient);
   padding: 7rem 1.5rem 5rem;
@@ -1259,7 +1223,6 @@ ul {
   margin-bottom: 2rem;
 }
 
-/* Email-link som pill-formet knap med ikon. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
 .contact-email {
   display: inline-flex;
   align-items: center;
@@ -1287,7 +1250,6 @@ ul {
   flex-shrink: 0;
 }
 
-/* Sociale medier-ikoner (større end footer-ikoner). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
 .contact-social {
   display: flex;
   gap: 1.5rem;
@@ -1323,8 +1285,6 @@ ul {
    KONTAKT — TEAM-KORT
    ============================================ */
 
-/* Team-sektion med polaroid-kort for co-founders. Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
-/* Lysere lilla baggrund end .contact-general for visuel kontrast. Lavet med AI, kig i documentation/samtaler/session-011_2026-02-09.md */
 .contact-team {
   padding: 5rem 1.5rem;
   text-align: center;
@@ -1346,7 +1306,6 @@ ul {
   margin: 0 auto;
 }
 
-/* Omvendt bølge-divider (bund-af-sektion variant). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
 .wave-divider--flipped {
   margin-bottom: 0;
   margin-top: -80px;
@@ -1356,8 +1315,6 @@ ul {
    404-FEJLSIDE
    ============================================ */
 
-/* 404 top-sektion: centrerer 404-displayet. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
-/* will-change: transform forhindrer sub-pixel gap efter animationer. Lavet med AI, kig i documentation/samtaler/session-013_2026-02-09.md */
 .error-top {
   display: flex;
   align-items: center;
@@ -1368,14 +1325,12 @@ ul {
   will-change: transform;
 }
 
-/* 404 bund-sektion: accent-baggrund med tekst og knap. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
 .error-bottom {
   background: var(--gradient);
   text-align: center;
   padding: 6rem 1.5rem 4rem;
 }
 
-/* 404-display: tallene og logoet i en række, bund-justeret. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
 .error-display {
   display: flex;
   align-items: flex-end;
@@ -1392,7 +1347,6 @@ ul {
   user-select: none;
 }
 
-/* Logo-wrapper og tip-animation: logoet vipper fra diamant (45°) til flad position. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
 .error-logo-wrapper {
   width: clamp(4.36rem, 10.9vw, 7.27rem);
   height: clamp(4.36rem, 10.9vw, 7.27rem);
@@ -1420,7 +1374,6 @@ ul {
   }
 }
 
-/* Tilgængelighed: deaktiver animation for brugere med reduced motion. Lavet med AI, kig i documentation/samtaler/session-009_2026-02-09.md */
 @media (prefers-reduced-motion: reduce) {
   .error-logo {
     animation: none;
@@ -1447,7 +1400,6 @@ ul {
    DESKTOP LAYOUT (min-width: 768px)
    ============================================ */
 
-/* Responsive breakpoint for tablet og op. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -1540,7 +1492,6 @@ ul {
     padding-bottom: 1.75rem;
   }
 
-  /* Responsive servicevilkår-styling. Lavet med AI, kig i documentation/samtaler/session-006_2026-02-08.md */
   .terms-header {
     padding-top: calc(var(--nav-height) + 4rem);
     padding-bottom: 3rem;
@@ -1550,7 +1501,6 @@ ul {
     padding: 2rem 2.5rem;
   }
 
-  /* Responsive om os-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md */
   .about-hero {
     padding-top: calc(var(--nav-height) + 1.5rem);
   }
@@ -1568,7 +1518,6 @@ ul {
     text-align: left;
   }
 
-  /* Responsive produkter-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
   .product-hero {
     padding-top: calc(var(--nav-height) + 4rem);
   }
@@ -1608,7 +1557,6 @@ ul {
     margin: 0;
   }
 
-  /* Responsive kontakt-styling (tablet+). Lavet med AI, kig i documentation/samtaler/session-010_2026-02-09.md */
   .contact-hero {
     padding-top: calc(var(--nav-height) + 4rem);
     padding-bottom: 3rem;
@@ -1625,7 +1573,6 @@ ul {
    DESKTOP LAYOUT (min-width: 1024px)
    ============================================ */
 
-/* Responsive breakpoint for desktop med scroll-animationer. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
 @media (min-width: 1024px) {
   .carousel-container {
     max-width: 320px;
@@ -1635,7 +1582,6 @@ ul {
     max-width: 350px;
   }
 
-  /* Scroll-animation starttilstand (kun desktop). Easing ændret til ease-in-out. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md */
   .slide-in-left {
     opacity: 0;
     transform: translateX(-80px);
@@ -1654,13 +1600,11 @@ ul {
     transform: translateX(0);
   }
 
-  /* Responsive produkter-styling (desktop). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
   .product-hero-image {
     max-width: 700px;
     animation: none;
   }
 
-  /* Svæve-animation starter efter slide-in (0.8s delay). Lavet med AI, kig i documentation/samtaler/session-008_2026-02-08.md */
   .product-hero-image.visible {
     animation: product-float 4s ease-in-out 0.8s infinite;
   }

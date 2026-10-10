@@ -1,10 +1,8 @@
-// Hovedscript for STNG Studios — jQuery-baseret interaktivitet. Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
 
 $(document).ready(function () {
 
   // ============================================
   // STICKY NAVBAR — transparent til solid ved scroll
-  // Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
   // ============================================
   var $header = $('.site-header');
   var heroHeight = $('.hero').outerHeight() || 300;
@@ -19,7 +17,6 @@ $(document).ready(function () {
 
   // ============================================
   // HAMBURGER-MENU — åbn/luk mobilmenu
-  // Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
   // ============================================
   var $hamburger = $('.hamburger');
   var $navMenu = $('.nav-menu');
@@ -59,7 +56,6 @@ $(document).ready(function () {
 
   // ============================================
   // BILLEDKARRUSEL — auto-rotation + manuel navigation
-  // Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
   // ============================================
   var currentSlide = 0;
   var totalSlides = $('.carousel-slide').length;
@@ -141,7 +137,6 @@ $(document).ready(function () {
 
   // ============================================
   // FAQ ACCORDION — klik for at vise/skjule svar med scrollHeight-baseret animation
-  // Lavet med AI, kig i documentation/samtaler/session-005_2026-02-08.md
   // ============================================
   $('.faq-question').on('click', function () {
     var $item = $(this).closest('.faq-item');
@@ -175,7 +170,6 @@ $(document).ready(function () {
 
   // ============================================
   // SCROLL-ANIMATIONER — elementer glider ind fra siderne (kun desktop)
-  // Lavet med AI, kig i documentation/samtaler/session-004_2026-02-07.md
   // ============================================
   if (window.matchMedia('(min-width: 1024px)').matches) {
     var observerOptions = {
@@ -184,7 +178,6 @@ $(document).ready(function () {
       threshold: 0.2
     };
 
-    // Scroll-animation: .visible tilføjes ved scroll. Elementer med data-animate-once animeres kun én gang. Lavet med AI, kig i documentation/samtaler/session-007_2026-02-08.md
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
